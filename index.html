@@ -9,8 +9,18 @@
 <body>
     <main>
         <h1>Iffy</h1>
-        <img src="https://picsum.photos/id/343/200/300" alt="Cave thing.">
-        <img src="https://picsum.photos/id/200/200/300" alt="Cow in field.">
+        <script>
+            console.log(window.location.host.includes('github.io'))
+            const onGithub = window.location.host.includes('github.io')
+            console.log(onGithub)
+
+            if (onGithub) {
+                document.write('<img src="https://picsum.photos/id/343/200/300" alt="Cave thing.">')
+            } else {
+                document.write('<img src="https://picsum.photos/id/200/200/300" alt="Cow in field.">')
+            }
+            
+        </script>
     </main>
 </body>
 </html>
